@@ -1,0 +1,203 @@
+h2 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+p{
+  font-size: 15px;
+  color: white;
+  margin-bottom: 1px;
+}
+
+.drag_portiere {
+  background-color: orange;
+  border-radius: 5px;
+  border: 2px solid lightsalmon \9;
+  cursor: pointer;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: 60px;
+  width: 140px;
+  -webkit-transition: background-color 0.25s ease-in;
+  -moz-transition: background-color 0.25s ease-in;
+  -ms-transition: background-color 0.25s ease-in;
+  -o-transition: background-color 0.25s ease-in;
+  transition: background-color 0.25s ease-in;
+  text-align: center;
+}
+.drag_portiere:last-of-type {
+  margin-right: 5px;
+}
+.drag_portiere:hover {
+  background-color: darkorange;
+}
+
+.drag_difensore {
+  background-color: green;
+  border-radius: 5px;
+  border: 2px solid lightgreen \9;
+  cursor: pointer;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: 60px;
+  width: 140px;
+  -webkit-transition: background-color 0.25s ease-in;
+  -moz-transition: background-color 0.25s ease-in;
+  -ms-transition: background-color 0.25s ease-in;
+  -o-transition: background-color 0.25s ease-in;
+  transition: background-color 0.25s ease-in;
+  text-align: center;
+}
+.drag_difensore:last-of-type {
+  margin-right: 5px;
+}
+.drag_difensore:hover {
+  background-color: darkolivegreen;
+}
+
+.drag_centrocampista {
+  background-color: rgb(51, 51, 247);
+  border-radius: 5px;
+  border: 2px solid lightskyblue \9;
+  cursor: pointer;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: 60px;
+  width: 140px;
+  -webkit-transition: background-color 0.25s ease-in;
+  -moz-transition: background-color 0.25s ease-in;
+  -ms-transition: background-color 0.25s ease-in;
+  -o-transition: background-color 0.25s ease-in;
+  transition: background-color 0.25s ease-in;
+  text-align: center;
+}
+.drag_centrocampista:last-of-type {
+  margin-right: 5px;
+}
+.drag_centrocampista:hover {
+  background-color: darkblue;
+}
+
+.drag_attaccante {
+  background-color: red;
+  border-radius: 5px;
+  border: 2px solid rgb(243, 82, 82) \9;
+  cursor: pointer;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: 60px;
+  width: 140px;
+  -webkit-transition: background-color 0.25s ease-in;
+  -moz-transition: background-color 0.25s ease-in;
+  -ms-transition: background-color 0.25s ease-in;
+  -o-transition: background-color 0.25s ease-in;
+  transition: background-color 0.25s ease-in;
+  text-align: center;
+}
+.drag_attaccante:last-of-type {
+  margin-right: 5px;
+}
+.drag_attaccante:hover {
+  background-color: darkred;
+}
+
+#dropItTitolari {
+  background: #5eced2;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 150px;
+  height: 70px;
+}
+
+#dropItPanchinari {
+  background: #7b7e7e;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 150px;
+  height: 70px;
+}
+
+#holder {
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-top: 5px;
+  width: auto;
+  height: 100px;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: #c1e7c7;
+}
+
+.wrapper::after{
+  content: ".";
+  display: block;
+  height: 0; 
+  font-size: 0;
+  clear: both; 
+  visibility: hidden;
+}
+.menu-wrapper{
+  box-sizing: border-box;
+  float: left;
+  width: 180px;
+  min-width: 180px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.menu{
+  box-sizing: border-box;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.1vw;
+}
+.menu > li{
+  box-sizing: border-box;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+  padding: 0;
+}
+.menu > li+li{
+  margin-top: 10px;
+}
+.container{
+  position: relative;
+  float: left;
+  width: calc(100% - 18vw);
+  height: 100%;
+}
+
+.my-menu{
+  text-align: center;
+  margin-left: 180px;
+}
+
+.prob_giocare{
+  height: 20px;
+  width: 90px;
+  padding: 0px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}

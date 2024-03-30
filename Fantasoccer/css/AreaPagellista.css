@@ -1,0 +1,69 @@
+body {
+height: 50%;
+width: 99%;
+}
+
+img {
+  width: 75px;
+  height: 75px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.header{
+  position: fixed; 
+  top: -1;
+  z-index: 1; 
+  overflow: auto; 
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 80px;
+  width: 100%;
+}
+
+.title{
+  padding-right: 10%;
+}
+
+.logoutButton{
+  padding-left: 10%;
+}
+
+.partite {
+  position: sticky;
+  overflow-y: auto;
+  margin-left: 40%;
+  margin-top: 85px;
+  text-align: center;
+}
+
+.vertical-menu {
+    position: fixed;
+    width: 400px;
+    height: 85%;
+    overflow-y: auto;
+    margin-left: 7%;
+    margin-top: 85px;
+    text-align: center;
+  }
+  
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}

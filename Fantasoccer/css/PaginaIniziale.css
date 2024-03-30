@@ -1,0 +1,40 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-image: url("../images/esempio2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  .testo{
+    text-align: center;
+    color: #C0C0C0;
+  font-size: 55px;
+}
+
+  .contenitore{
+    background-color:white;
+
+  }
+  
+  
+  .bottone {
+    width: 30%;
+    font-size: 30px !important;
+    height: 7%;
+    background-color:#C0C0C0 !important;
+    border-color:#C0C0C0 !important;
+    color:black!important;
+; 
+  }
+   
+  
+    .bottone {text-align:center;transition: 1.2s ease;
+    -webkit-transition: 1.2s ease;
+    } 
+    .bottone:hover{
+    -webkit-transform : scale(1.4);
+    }
+
+  

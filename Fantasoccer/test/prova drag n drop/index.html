@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="./index.css">
+		<script src="./index.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<section id="html5-drag">
+			<div class="wrapper">
+				<div class="menu-wrapper">
+						<ul class="menu" id="holder">
+							<li><div class="drag_portiere" id="box1" draggable="true" dr ondragstart="return dragStart(event)"><input type="text" value="1" name="portieri[]" hidden><p>Portiere 1</p></div></li>
+							<li><div class="drag_portiere" id="box2" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="2" name="portieri[]" hidden><p>Portiere 2</p></div></li>
+							<li><div class="drag_portiere" id="box3" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="3" name="portieri[]" hidden><p>Portiere 3</p></div></li>
+							<li><div class="drag_difensore" id="box4" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="4" name="difensori[]" hidden><p>Difensore 1</p></div></li>
+							<li><div class="drag_difensore" id="box5" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="5" name="difensori[]" hidden><p>Difensore 2</p></div></li>
+							<li><div class="drag_difensore" id="box6" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="6" name="difensori[]" hidden><p>Difensore 3</p></div></li>
+							<li><div class="drag_difensore" id="box7" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="7" name="difensori[]" hidden><p>Difensore 4</p></div></li>
+							<li><div class="drag_difensore" id="box8" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="8" name="difensori[]" hidden><p>Difensore 5</p></div></li>
+							<li><div class="drag_difensore" id="box9" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="9" name="difensori[]" hidden><p>Difensore 6</p></div></li>
+							<li><div class="drag_difensore" id="box10" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="10" name="difensori[]" hidden><p>Difensore 7</p></div></li>
+							<li><div class="drag_difensore" id="box11" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="11" name="difensori[]" hidden><p>Difensore 8</p></div></li>
+
+							<li><div class="drag_centrocampista" id="box12" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="12" name="centrocampisti[]" hidden><p>Centrocampista 1</p></div></li>
+							<li><div class="drag_centrocampista" id="box13" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="13" name="centrocampisti[]" hidden><p>Centrocampista 2</p></div></li>
+							<li><div class="drag_centrocampista" id="box14" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="14" name="centrocampisti[]" hidden><p>Centrocampista 3</p></div></li>
+							<li><div class="drag_centrocampista" id="box15" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="15" name="centrocampisti[]" hidden><p>Centrocampista 4</p></div></li>
+							<li><div class="drag_centrocampista" id="box16" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="16" name="centrocampisti[]" hidden><p>Centrocampista 5</p></div></li>
+							<li><div class="drag_centrocampista" id="box17" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="17" name="centrocampisti[]" hidden><p>Centrocampista 6</p></div></li>
+							<li><div class="drag_centrocampista" id="box18" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="18" name="centrocampisti[]" hidden><p>Centrocampista 7</p></div></li>
+							<li><div class="drag_centrocampista" id="boX19" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="19" name="centrocampisti[]" hidden><p>Centrocampista 8</p></div></li>
+
+							<li><div class="drag_attaccante" id="box20" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="20" name="attaccanti[]" hidden><p>Attaccante 1</p></div></li>
+							<li><div class="drag_attaccante" id="box21" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="21" name="attaccanti[]" hidden><p>Attaccante 2</p></div></li>
+							<li><div class="drag_attaccante" id="box22" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="22" name="attaccanti[]" hidden><p>Attaccante 3</p></div></li>
+							<li><div class="drag_attaccante" id="box23" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="23" name="attaccanti[]" hidden><p>Attaccante 4</p></div></li>
+							<li><div class="drag_attaccante" id="box24" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="24" name="attaccanti[]" hidden><p>Attaccante 5</p></div></li>
+							<li><div class="drag_attaccante" id="box25" draggable="true" ondragstart="return dragStart(event)"><input type="text" value="25" name="attaccanti[]" hidden><p>Attaccante 6</p></div></li>
+						</ul>
+					
+				</div>
+				<div>
+					<h2>Inserisci la formazione</h2>
+					<br>
+					<form>
+						<div class="row">
+							<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'portiere')" ondragover="return dragOver(event)"></article>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'difensore')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'difensore')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'difensore')" ondragover="return dragOver(event)"></article>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'centrocampista')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'centrocampista')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'centrocampista')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'centrocampista')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'centrocampista')" ondragover="return dragOver(event)"></article>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'attaccante')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItTitolari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'attaccante')" ondragover="return dragOver(event)"></article>
+							</div>
+						</div>
+						<br><br>
+						<div class="row">
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'portiere')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'difensore')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'difensore')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'difensore')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'centrocampista')" ondragover="return dragOver(event)"></article>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'centrocampista')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'centrocampista')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'attaccante')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'attaccante')" ondragover="return dragOver(event)"></article>
+							</div>
+							<div class="col-sm">
+								<article id="dropItPanchinari" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event,'attaccante')" ondragover="return dragOver(event)"></article>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col text-center">
+								<button type="submit" class="btn btn-primary">Salva formazione</button>
+							</div>
+						</div>
+						<div id="test"></div>
+					</form>
+				</div>
+			</div>
+		  
+			
+		  
+		
+		</section><!-- /#html5-drag -->
+	</body>
+</html>

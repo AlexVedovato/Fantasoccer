@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+h1 {font-size: 75px;
+  color: black;}
+  
+.box {background-color: rgb(228, 225, 225);
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 20px;}
+
+#drop_file_zone {
+background-color: #EEE;
+border: #999 5px dashed;
+width: 100%;
+height: 200px;
+padding: 8px;
+font-size: 18px;
+}
+
+#drag_upload_file {
+width:50%;
+margin:0 auto;
+}
+
+#drag_upload_file p {
+justify-content: center;
+text-align: center;
+}
+

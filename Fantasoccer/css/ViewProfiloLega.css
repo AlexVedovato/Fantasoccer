@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+  font-family: Arial;
+}
+img{
+    border-radius: 50%;
+}
+.nome{
+    font-size: 60px;
+}
+.table-rounded {
+    width: 1000px;
+    font-size: 50px;
+    margin: 15px auto;
+    margin-top: 9%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+   border-radius: 12px;
+    }
+.table-rounded th {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: center;
+    }
+.table-rounded td{
+    padding: 6px;
+    vertical-align: middle;
+    text-align: center;
+    }
+.table-rounded th:first-child, .table-rounded tr:first-child td:first-child {
+    border-top-left-radius: 12px;
+    }
+.table-rounded th:last-child, .table-rounded tr:first-child td:last-child {
+    border-top-right-radius: 12px;
+    }
+.table-rounded tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+    }
+.table-rounded tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+    }
+.table-rounded td+td {
+    border-left: none;
+    }
+.table-rounded tr+tr td, .table-rounded th+tr td{
+    border-top: none;
+    }

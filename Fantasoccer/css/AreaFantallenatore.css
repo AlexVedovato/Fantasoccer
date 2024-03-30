@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+  font-family: Arial;
+}
+.immagine {
+  width: 100px;
+  height: 100px;
+}
+.table-rounded {
+    width: 900px;
+    margin: 50px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+   border-radius: 12px;
+    }
+.table-rounded th {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #602c82a1;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    }
+.table-rounded td{
+    width: 33% ;
+    padding: 10px;
+    vertical-align: middle;
+    border: 2px solid #602c82a1;
+    text-align: center;
+    font-size: 35px;
+    }
+
+.sottotitoli{
+    font-size: 15px;
+}
+
+.table-rounded th:first-child, .table-rounded tr:first-child td:first-child {
+    border-top-left-radius: 12px;
+    }
+.table-rounded th:last-child, .table-rounded tr:first-child td:last-child {
+    border-top-right-radius: 12px;
+    }
+.table-rounded tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+    }
+.table-rounded tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+    }
+.table-rounded td+td {
+    border-left: none;
+    }
+.table-rounded tr+tr td, .table-rounded th+tr td{
+    border-top: none;
+    }
+
+    p {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
+    #second, #first, #third {
+        width: 100px; 
+    }
+    #first {
+        height: 200px;
+        background: #C98910;
+    }
+    #second {
+        height: 150px;
+        background: #A8A8A8;
+    }
+    #third {
+        height: 100px;
+        background: #965A38;
+    }
+    .text-inside{
+      text-align:center;
+      padding-top:20px;
+    }
+    .player{
+      font-size:20px;
+    }
+    
+    .points{
+      padding-top:14px;
+      font-size:14px;
+      display: block;
+    }
+    
+    #podium{
+     margin: 0 auto;
+    }

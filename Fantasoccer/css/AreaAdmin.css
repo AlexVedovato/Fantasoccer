@@ -1,0 +1,60 @@
+body {
+    font-size: 56.5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+  }
+  
+  .container {
+    padding: 2em;
+ 
+  }
+  
+  /* GENERAL BUTTON STYLING */
+  button,
+  button::after {
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+
+  button {
+    background: none;
+    border: 3px solid rgb(3, 3, 3);
+    border-radius: 5px;
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 1em auto;
+    padding: 2em 6em;
+    position: relative;
+    text-transform: uppercase;
+    width: 35%;
+    height: 13%;
+  }
+  
+  button::before,
+  button::after {
+    background: rgb(228, 225, 225);
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+
+  .btn-3::after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+  }
+  
+  .btn-3:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  
